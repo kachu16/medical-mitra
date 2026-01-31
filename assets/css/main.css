@@ -9385,3 +9385,616 @@ html {
 .cookie-section {
   scroll-margin-top: 120px;
 }
+
+/* Custom CSS for EULA Page */
+
+/* Sidebar Navigation */
+.eula-sidebar {
+  position: sticky;
+  top: 120px;
+  background: var(--surface-color);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.eula-sidebar h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+.eula-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.eula-nav li {
+  margin-bottom: 10px;
+}
+
+.eula-nav li a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--default-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.eula-nav li a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  padding-left: 20px;
+}
+
+/* EULA Content */
+.eula-content {
+  background: var(--surface-color);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* EULA Header */
+.eula-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background: linear-gradient(135deg, #6610f2, #7952b3);
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(102, 16, 242, 0.3);
+}
+
+.eula-header .header-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.eula-header .header-icon i {
+  font-size: 40px;
+  color: var(--contrast-color);
+}
+
+.eula-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--contrast-color);
+  margin: 0;
+}
+
+.eula-header p {
+  font-size: 15px;
+  color: var(--contrast-color);
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+}
+
+/* EULA Sections */
+.eula-section {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.eula-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.eula-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.eula-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: #6610f2;
+}
+
+.eula-section h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.eula-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  margin-bottom: 15px;
+}
+
+/* Important Box */
+.important-box {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: color-mix(in srgb, #dc3545, transparent 90%);
+  border-left: 4px solid #dc3545;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.important-box i {
+  font-size: 24px;
+  color: #dc3545;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.important-box h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
+
+.important-box p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Scope Box */
+.scope-box {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: color-mix(in srgb, #6610f2, transparent 92%);
+  border-left: 4px solid #6610f2;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.scope-box i {
+  font-size: 24px;
+  color: #6610f2;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.scope-box h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
+
+.scope-box p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* License Card */
+.license-card {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background: color-mix(in srgb, #28a745, transparent 92%);
+  border: 2px solid color-mix(in srgb, #28a745, transparent 70%);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.license-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.license-icon i {
+  font-size: 30px;
+  color: var(--contrast-color);
+}
+
+.license-card h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.license-card p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Restrictions List */
+.restrictions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.restriction-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: var(--surface-color);
+  border: 2px solid color-mix(in srgb, #dc3545, transparent 85%);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.restriction-item:hover {
+  border-color: #dc3545;
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.15);
+}
+
+.restriction-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #dc3545, #e35d6a);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.restriction-icon i {
+  font-size: 24px;
+  color: var(--contrast-color);
+}
+
+.restriction-item h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 8px;
+}
+
+.restriction-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* IP Grid */
+.ip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.ip-card {
+  background: var(--surface-color);
+  border: 2px solid color-mix(in srgb, #6610f2, transparent 85%);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.ip-card:hover {
+  border-color: #6610f2;
+  box-shadow: 0 8px 25px rgba(102, 16, 242, 0.2);
+  transform: translateY(-5px);
+}
+
+.ip-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #6610f2, #7952b3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 5px 15px rgba(102, 16, 242, 0.3);
+}
+
+.ip-icon i {
+  font-size: 32px;
+  color: var(--contrast-color);
+}
+
+.ip-card h6 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 12px;
+}
+
+.ip-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Termination Box */
+.termination-box {
+  background: color-mix(in srgb, #ffc107, transparent 92%);
+  border: 2px solid color-mix(in srgb, #ffc107, transparent 70%);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px 0;
+}
+
+.term-item {
+  padding: 20px 0;
+  border-bottom: 1px solid color-mix(in srgb, #ffc107, transparent 80%);
+}
+
+.term-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.term-item:first-child {
+  padding-top: 0;
+}
+
+.term-label {
+  display: inline-block;
+  background: #ffc107;
+  color: var(--heading-color);
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.term-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Law Box */
+.law-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 25px;
+  background: color-mix(in srgb, #6610f2, transparent 92%);
+  border: 2px solid color-mix(in srgb, #6610f2, transparent 70%);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.law-box i {
+  font-size: 40px;
+  color: #6610f2;
+  flex-shrink: 0;
+}
+
+.law-box p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Acceptance Box */
+.acceptance-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background: linear-gradient(135deg, #6610f2, #7952b3);
+  border-radius: 15px;
+  margin-top: 40px;
+  box-shadow: 0 10px 30px rgba(102, 16, 242, 0.3);
+}
+
+.acceptance-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.acceptance-icon i {
+  font-size: 36px;
+  color: var(--contrast-color);
+}
+
+.acceptance-box h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--contrast-color);
+  margin-bottom: 10px;
+}
+
+.acceptance-box p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--contrast-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .eula-sidebar {
+    position: relative;
+    top: 0;
+    margin-bottom: 30px;
+  }
+
+  .eula-content {
+    padding: 30px 25px;
+  }
+
+  .eula-header {
+    padding: 25px;
+  }
+
+  .eula-header h2 {
+    font-size: 24px;
+  }
+
+  .eula-section h3 {
+    font-size: 22px;
+  }
+
+  .ip-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .eula-content {
+    padding: 25px 20px;
+  }
+
+  .eula-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .eula-header .header-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .eula-header .header-icon i {
+    font-size: 35px;
+  }
+
+  .eula-header h2 {
+    font-size: 22px;
+  }
+
+  .eula-section {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  .eula-section h3 {
+    font-size: 20px;
+  }
+
+  .important-box,
+  .scope-box,
+  .license-card,
+  .law-box {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .restriction-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .acceptance-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .termination-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .eula-sidebar {
+    padding: 20px;
+  }
+
+  .eula-nav li a {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .eula-content {
+    padding: 20px 15px;
+  }
+
+  .eula-header {
+    padding: 15px;
+  }
+
+  .eula-section p {
+    font-size: 14px;
+  }
+
+  .ip-card {
+    padding: 20px;
+  }
+
+  .restriction-item h6 {
+    font-size: 15px;
+  }
+
+  .restriction-item p {
+    font-size: 13px;
+  }
+
+  .acceptance-box {
+    padding: 20px 15px;
+  }
+
+  .acceptance-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .acceptance-icon i {
+    font-size: 30px;
+  }
+
+  .acceptance-box h5 {
+    font-size: 18px;
+  }
+
+  .acceptance-box p {
+    font-size: 14px;
+  }
+}
+
+/* Smooth Scrolling for Anchor Links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll Padding for Fixed Header */
+.eula-section {
+  scroll-margin-top: 120px;
+}
