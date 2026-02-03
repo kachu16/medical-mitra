@@ -204,10 +204,14 @@ h6 {
   transition: 0.3s;
 }
 
+.header .btn-getstarted {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #c82333, transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -937,7 +941,7 @@ section,
 }
 
 .hero .hero-content .content-box .cta-group .btn.btn-outline {
-  background-color: transparent;
+  background-color: white;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -2005,7 +2009,7 @@ section,
 }
 
 .call-to-action .emergency-alert {
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), black 20%) 100%);
+  background: linear-gradient(135deg, #dc3545, #c82333);
   padding: 2rem;
   border-radius: 15px;
   margin-top: 3rem;
@@ -2068,7 +2072,7 @@ section,
 
 .call-to-action .emergency-alert .emergency-btn {
   background: var(--contrast-color);
-  color: var(--accent-color);
+  color: #dc3545;
   padding: 15px 25px;
   border-radius: 50px;
   font-weight: 700;
@@ -3302,19 +3306,42 @@ section,
 }
 
 .services .services-tabs .nav-tabs .nav-item {
-  margin: 0 10px;
+  margin: 5px;
 }
 
 .services .services-tabs .nav-tabs .nav-link {
   background: var(--surface-color);
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 85%);
   border-radius: 50px;
-  color: var(--default-color);
+  color: var(--contrast-color);
   font-weight: 600;
   padding: 15px 30px;
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  transition: all .3s ease;
+}
+
+#services-primary-tab {
+  background: linear-gradient(to bottom right, #6488ff, #7892f0);
+}
+
+#services-specialty-tab {
+  background-image: linear-gradient(to bottom right, #f89baf, #F52D6A);
+}
+
+#services-diagnostics-tab {
+  background-image: linear-gradient(to bottom right, #FF4141, #f47a7a);
+}
+
+#services-emergency-tab {
+  background-image: linear-gradient(to bottom right, #a18de8, #522ED2);
+}
+
+#services-medicine-delivery-tab {
+  background-image: linear-gradient(to bottom right, #f2d498, #ffbf35);
+}
+
+#services-reports-history-tab {
+  background-image: linear-gradient(to bottom right, #7dddd5, #01bcad);
 }
 
 .services .services-tabs .nav-tabs .nav-link::before {
@@ -3324,14 +3351,14 @@ section,
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #007acc 50%));
-  transition: left 0.3s ease;
+  /* background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #007acc 50%)); */
+  /* transition: left 0.3s ease; */
   z-index: -1;
 }
 
 .services .services-tabs .nav-tabs .nav-link:hover {
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
+  /* color: var(--contrast-color); */
+  /* border-color: var(--accent-color); */
   transform: translateY(-2px);
 }
 
@@ -3340,9 +3367,10 @@ section,
 }
 
 .services .services-tabs .nav-tabs .nav-link.active {
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #007acc 50%));
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
+  /* border-width: 1px; */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  /* color: var(--contrast-color);
+  border-color: var(--accent-color); */
 }
 
 .services .services-tabs .nav-tabs .nav-link.active::before {
@@ -3355,7 +3383,7 @@ section,
 
 .services .service-item {
   background: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  /* border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%); */
   border-radius: 20px;
   padding: 30px;
   height: 100%;
@@ -6751,9 +6779,7 @@ section,
 }
 
 /* Smooth Scrolling for Anchor Links */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Scroll Padding for Fixed Header */
 .terms-section {
@@ -7403,9 +7429,7 @@ html {
 }
 
 /* Smooth Scrolling for Anchor Links */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Scroll Padding for Fixed Header */
 .privacy-section {
@@ -7949,9 +7973,7 @@ html {
 }
 
 /* Smooth Scrolling for Anchor Links */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Scroll Padding for Fixed Header */
 .tc-section {
@@ -8736,9 +8758,7 @@ html {
 }
 
 /* Smooth Scrolling for Anchor Links */
-html {
-  scroll-behavior: smooth;
-}
+
 
 /* Scroll Padding for Fixed Header */
 .policy-section {
@@ -9987,11 +10007,6 @@ html {
   .acceptance-box p {
     font-size: 14px;
   }
-}
-
-/* Smooth Scrolling for Anchor Links */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Scroll Padding for Fixed Header */
